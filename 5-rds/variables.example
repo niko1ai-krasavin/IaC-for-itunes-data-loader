@@ -1,0 +1,31 @@
+# Variables for database
+variable "username_for_db_rds" {
+  default = ""
+}
+
+variable "password_for_db_rds" {
+  default = ""
+}
+
+variable "dbname_for_db_rds" {
+  default = ""
+}
+
+# Variables ID of VPC and subnets
+variable "id_of_custom_vpc" {
+  description = "ID of custom vpc"
+  type        = string
+  default     = ""
+}
+
+variable "id_of_db_subnet_az_a" {
+  description = "ID of db subnet in AZ-a"
+  type        = string
+  default     = ""
+}
+
+variable "id_of_db_subnet_az_b" {
+  description = "ID of db subnet in AZ-b"
+  type        = string
+  default     = ""
+}
